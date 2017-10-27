@@ -39,7 +39,7 @@ public class BankingServiceImpl implements IBankingService {
 	}
 	@Override
 	public boolean validateAddress(String address) {
-		String ptn="^[a-zA-Z0-9\\s]*$";
+		String ptn="^[a-zA-Z0-9#\\s]*$";
 		if(Pattern.matches(ptn, address))
 		{
 			return true;

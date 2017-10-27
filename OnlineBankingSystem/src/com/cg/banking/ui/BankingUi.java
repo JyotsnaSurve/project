@@ -62,8 +62,9 @@ public class BankingUi {
 				}
 		break;
 		case 2:
+				sc.nextLine();
 				System.out.println("\nEnter new Mobile No:");
-				String mob=sc.next();
+				String mob=sc.nextLine();
 				String num=String.valueOf(mob);
 				
 				if(service.validatePhoneNo(num))
